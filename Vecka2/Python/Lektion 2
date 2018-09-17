@@ -1,0 +1,38 @@
+'''
+x = [i%i for i in range(10) if i >= 1]
+print(x)
+
+x = [i*2 for i in range(10)]
+print(x)
+#print(x[:-2])
+
+
+x = [1,2,3,4,5,6,7,8,9,10]
+for i in range(len(x)):
+    x[i] = x[i] * 2
+print(x)
+
+while len(x)<10:
+    x.append(len(x)*2)
+print(x)
+
+#x = [i for i in range(10) if i >= 4]
+
+
+count = 0
+while x[count]  >= 10
+x = x * 2
+
+
+print(x)
+
+x.append("bmw")
+print(x)
+'''
+
+
+x =" The quick brown fox jumps over the lazy dog "
+#x = x.replace("jumps","hop)
+print(x.join(x))
+
+

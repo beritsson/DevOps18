@@ -1,0 +1,149 @@
+bear = ["hjort","uggla","häst","gnu","struts","myra","lejon"]                 #Skapar lista
+collor = ["Yellow","Blue","Green"]
+karl = ["Edvin","Karl","Filip"]
+#print(bear[1])                                  # printar ut numret på listan OBS hakparanteser
+#print(len(bear))                                # anger hur många saker jag har i listan OBS paranteser
+
+djurfärg = [bear,collor]                        # lägger ihop listorna till den tredje
+#print(djurfärg)                                 # printar nya listan
+#print(djurfärg[1][1],djurfärg[0][1])            # printar elementen i listorna. Tänk på 0 räknas som första
+                                                # i det här fallet lista två innehåll två
+
+#bear.append("tiger")                               # lägger till i befintlig lista
+#print(bear)
+
+bear.sort()                                        # sorterar listan
+#print(bear)
+
+#bear.clear()                                     # tar bort listan
+#bear.remove()                                     # tar bort i listan
+#print(bear)
+
+#bear.reverse()                                     # omvänd sortering
+#print(bear)
+
+#print(len(bear[2:5]),bear[2:6])                                   # tar fram en del av listan
+'''
+for x in bear:
+    if x == "gnu":
+        print("Ja, Gnu finns me
+
+
+mycars = ("Hyundai","Volvo","Jaguar","Fiat")  # Detta ger tuple man ser det på paranteserna kring innehållet
+print(mycars)
+mycars = list(mycars)                         # Nu är det en lista, Hakparateser
+print(mycars)
+________________________
+print(bear)
+inp = input("Vad vill du söka : ")
+for word in bear:
+    if word == inp:
+        search = word
+        break
+    else:
+        search =("finns ej")
+
+print(search)
+
+
+y = 0
+inp = int(input("Ange en siffra: "))
+x = (inp**inp)
+print(x)
+svar = input("Vill du fortsätta igen [y],[n]")
+while svar == "y":
+        inp = int(input("Ange en ny siffra"))
+        x = (inp**inp)
+        print(x)
+        svar = input("Vill du fortsätta igen [y],[n]")
+print("Hej då")
+
+___________________________
+beräkning = input("Vill du räkna?: ")
+
+while beräkning == "ja":
+    
+    tal1 = int(input("Välj din första siffra: "))
+    tal2 = int(input("Välj din andra siffra: "))
+    val = int(input("1 - Addition\n2 - Multiplikation\n3 - Exponentiel\n4 - Avsluta\nSvar: "))
+    
+    if val == 1:
+        print("Addition")
+        svar = tal1 + tal2
+        print(svar)
+    elif val == 2:
+        print("Multiplikation")
+        svar = tal1*tal2
+        print(svar)
+    elif val == 3:
+        print("Exponentiell")
+        print("första siffran ^ andra siffran")
+        svar = tal1**tal2
+        print(svar)
+    elif val == 4:
+        print("Du har valt att avsluta - Hej då")
+        exit()
+
+    beräkning = input("Vill du fortsätta: ")
+
+print("Du har skivit fel")
+
+
+katter = {"namn":"Sally",
+          "ras":"bengal",
+          "långhårig":"nej"}
+print(katter.keys())
+print(katter.values())
+print(katter.items())
+'''
+valmöjliget = input("Lägga in i listor?: ")
+Anvnamn = input("Ange ditt användarnamn? ")
+lösen = input(Ange ditt lösenord.)
+
+while valmöjliget == "ja":
+    val = int(input("\n\n\nVill du lägga in i listan Karl - tryck 1\nVill du lägga in i listan collor - tryck 2\nVill du radera? - tryck 3\nAvsluta - tryck 4\n\nSvar?: "))
+
+    if val == 1:
+        print("Listans innehåll", karl)
+        lägg = input("Vilket namn vill du lägga in?: ")
+        karl.append(lägg)
+        print("Listans innehåll")
+        print(karl)
+
+    elif val == 2:
+        print(collor)
+        lägg = input("Vilken ny färg vill du lägga in? ")
+        collor.append(lägg)
+        print("Listans innehåll")
+        print(collor)
+
+    elif val == 3:
+        chose = int(input("\n\nVill du radera i listan Karl tryck 1\nVIll du radera i listan collor tryck 2\nVill du radera hela Karl tryck 3\n Vill du radera hela collor tryck 4"))
+        if chose == 1:
+            print(karl)
+            radera1 = input("Vad vill du radera i Karl? ")
+            karl.remove(radera1)
+            print(karl)
+
+        elif chose == 2:
+            print(collor)
+            radera2 = input("Vad vill du radera i collor? ")
+            collor.remove(radera2)
+            print(collor)
+
+        elif chose == 3:
+            print(karl)
+            print("Din lista kommer nu raderas")
+            karl.clear()
+            print(karl)
+
+        elif chose == 4:
+            print(collor)
+            print("Din lista kommer nu raderas")
+            collor.clear()
+            print(collor)
+
+    elif val == 4:
+        print("Programmet avsluta. Hejsvejs")
+        exit()
+
