@@ -19,6 +19,16 @@ f.seek(0)                                   # (0) är antal tecken. prova att ä
 print()     -   funktioner
 f.read()    -   metoder
 
-'''
-d = open("text.txt",mode="r+")
-print(d,mode)
+
+När man har en fil och behöver titta snabbt. Förmodligen är detta det korrekta sättet.
+Man öppnar filen, man gör sitt och sen stängs filen
+
+with open("testfil.txt",mode="r+") as p:            # Här öppnar jag en textfil tillfälligt. sen close-ar den filen
+    hej = p.read()
+print(hej*2)
+
+Har jag en fil som är länkad till en variabel p, men i open-senariet använder en annan variabel k når jag texten i med
+den första variabeln p
+Anlednigen att stänga filen efter editering är om filen är jättestor så ska den inte ligga och ta arbetsminne.
+Men printar jag open-senariets variabel går det inte efter den efter som den är stängd.
+
