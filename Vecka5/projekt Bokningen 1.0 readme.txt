@@ -48,5 +48,5 @@ Valmöjligeheten i detta program är nästan oändlig, det finns långt fler fun
 startar om programmet.
 - skicka textfilen till en epostadress.
 
-Jag har stött på stora problem under tiden, från programatiska fel till vanliga småfel som att glömt en parantes.
+Jag har stött på stora problem under tiden, från programatiska fel, som hur gör jag listan privat, till vanliga småfel som att glömt en parantes.
 
